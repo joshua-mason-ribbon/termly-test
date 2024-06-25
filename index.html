@@ -18,19 +18,11 @@
 ></script>
 </head>
 <body>
-      <iframe id="iframe" src="about:blank" width="300" height="200"></iframe>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const iframe = document.getElementById('iframe');
-        fetch('https://wondering.com/.well-known/apple-app-site-association')
-            .then(response => response.text())
-            .then(data => {
-                const doc = iframe.contentDocument || iframe.contentWindow.document;
-                doc.body.innerHTML = data;  // This injects the text as HTML
-            })
-            .catch(error => console.error('Error loading the text file:', error));
-    });
-    </script>
+    <iframe
+    src="https://wondering.com/termly-consent-sync.html"
+    style="display: none"
+    ></iframe>
+
     <header>
         <h1>Welcome to My Subdomain!</h1>
     </header>
